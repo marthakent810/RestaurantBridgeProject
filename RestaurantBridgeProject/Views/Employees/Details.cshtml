@@ -1,0 +1,74 @@
+﻿@model RestaurantBridgeProject.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Employee</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpEmail)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpEmail)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpPhone)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpPhone)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmergName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmergName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmergNum)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmergNum)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateStart)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateStart)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.EmpId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
